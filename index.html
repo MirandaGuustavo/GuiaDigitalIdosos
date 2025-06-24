@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guia Digital para Idosos</title>
+
+    <script src="https://kit.fontawesome.com/8a2a925c35.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+<header>
+    <h1>Guia Digital para Idosos</h1>
+    <p>Inclusão Tecnológica para Idosos por Meio de Página Web</p>
+</header>
+
+<nav>
+    <a href="#intro">Introdução</a>
+    <a href="#whatsapp">WhatsApp</a>
+    <a href="#videochamada">Chamadas de Vídeo</a>
+    <a href="#google">Google</a>
+    <a href="#boletos">Boletos</a>
+    <a href="#contato">Contato</a>
+</nav>
+ 
+<section id="intro" class="fade-in">
+    
+    <h2><i class="fas fa-info-circle"></i>Introdução</h2>
+    <p>Este guia foi feito para ajudar você, que está começando a usar o celular ou a internet.</p>
+    <p>Aqui, você vai aprender a usar o WhatsApp, fazer chamadas de vídeo, buscar no Google e pagar boletos de forma segura.</p>
+    <p>Os passos serão os mais simples e diretos possíveis. Vamos começar!</p>
+</section>
+
+<section id="whatsapp" class="fade-in">
+    <h2><i class="fab fa-whatsapp"></i> Como Usar o WhatsApp</h2>
+    <p><strong>Passo 1:</strong> Toque no ícone verde do WhatsApp no seu celular.</p>
+    <p><strong>Passo 2:</strong> Toque no botão com um balãozinho de conversa.</p>
+    <p><strong>Passo 3:</strong> Escolha o contato com quem você quer conversar.</p>
+    <p><strong>Passo 4:</strong> Escreva sua mensagem no campo que aparece na parte de baixo da tela.</p>
+    <p><strong>Passo 5:</strong> Toque no ícone de aviãozinho para enviar.</p>
+    <img src="img/whatsapp.jpg" alt="Imagem do WhatsApp" width="300">
+</section>
+
+<section id="videochamada" class="fade-in">
+    <h2>Como Fazer Chamadas de Vídeo</h2>
+    <p><strong>Passo 1:</strong> Abra o WhatsApp e toque em uma conversa com quem você quer falar.</p>
+    <p><strong>Passo 2:</strong> Toque no ícone de câmera, no canto superior da tela.</p>
+    <p><strong>Passo 3:</strong> Aguarde a pessoa atender. Agora vocês poderão se ver e conversar ao vivo!</p>
+    <img src="img/videochamada.jpg" alt="Imagem da página do Google" width="300">
+</section>
+
+<section id="google" class="fade-in">
+    <h2>Como Acessar o Google</h2>
+    <p><strong>Passo 1:</strong> Toque no aplicativo de internet do seu celular (navegador).</p>
+    <p><strong>Passo 2:</strong> No campo de endereço, digite: <em>www.google.com</em> e toque em “Ir”.</p>
+    <p><strong>Passo 3:</strong> Digite o que você quer saber e toque na lupa para buscar.</p>
+    <img src="img/google.jpg" alt="Imagem da página do Google" width="300">   
+</section>
+
+<section id="boletos" class="fade-in">
+    <h2>Como Pagar Boletos Online</h2>
+    <p><strong>Passo 1:</strong> Abra o aplicativo do seu banco.</p>
+    <p><strong>Passo 2:</strong> Toque na opção "Pagar boletos".</p>
+    <p><strong>Passo 3:</strong> Aponte a câmera para o código de barras do boleto, ou digite o número com calma.</p>
+    <p><strong>Passo 4:</strong> Confira as informações e toque em "Confirmar" para pagar.</p>
+    <img src="img/boleto.jpg" alt="Imagem da página do Google" width="300">
+</section>
+
+<section id="contato" class="fade-in">
+  <h2><strong> Tire Suas Dúvidas</strong></h2>
+  <form onsubmit="alert('Mensagem enviada com sucesso!'); return false;">
+    <input type="text" placeholder="Seu nome" required><br><br>
+    <input type="email" placeholder="Seu e-mail" required><br><br>
+    <textarea placeholder="Sua mensagem" rows="4" required></textarea><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+
+<a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="btn-topo" title="Voltar ao Topo">⬆️</a> 
+
+<button onclick="toggleDicas()"class="btn-acao">💡 Mostrar dicas extras</button>
+
+<div id="dicasExtras" class="oculto">
+  <p>🛑 Nunca clique em links suspeitos.</p>
+  <p>🔒 Evite passar senhas por mensagem.</p>
+  <p>👨‍👩‍👧‍👦 Sempre peça ajuda de alguém de confiança se tiver dúvida.</p>
+</div>
+
+<br><br>
+
+<button onclick="toggleDarkMode()"class="btn-acao">🌙 Alternar Modo Noturno</button>
+
+<footer>
+    <p>Guia Digital para Idosos | Desenvolvido por Gustavo Miranda de Oliveira</p>
+    <p>Contato: gmirandadeoliveira@gmail.com</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
